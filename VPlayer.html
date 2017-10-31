@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>V Player</title>
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="box a">
+    <h1>V Player</h1>
+    <h2>Music for everyone and everywhere</h2>
+  </div>
+  <div class="box b">
+    <div id="searchpos">
+      <input type="text" class="search" id="myInput" onkeyup="myFunction()" name="search" placeholder="Search for a song">
+    </div>
+    <!--This is the list that apears and can be filtered through and the elements can be added by click:
+		https://www.w3schools.com/howto/howto_js_filter_lists.asp-->
+    <ul id="myUL">
+      <li><a href="#" id="listaddone">(VGM) Final Fantasy VI - The Decisive Battle ~ Doujin</a></li>
+      <li><a href="#" id="listaddtwo">Ventonio - Red Winged Angel (Legendary Version)</a></li>
+      <li><a href="#" id="listaddthree">NieR- Automata OST - City Ruins (Dynamic - Vocals)</a></li>
+      <li><a href="#" id="listaddfour">FFXIV OST Wanderer's Palace HM Theme</a></li>
+      <li><a href="#" id="listaddfive">F-777 - Raptor 2 -FREE ALBUM!- - 06 A Lost World</a></li>
+    </ul>
+    <h2>Recommended songs</h2>
+    <!--Here I found out how to input the audio files in the HTML:
+		https://tutorialehtml.com/en/html-tutorial-embed-audio/-->
+    <div>
+      <button class="add" id="addone"></button>
+      <br>
+      <button class="deny" id="denyone"></button>
+      <div class="musicbox" id="mone">
+        <p>(VGM) Final Fantasy VI - The Decisive Battle ~ Doujin</p>
+        <audio controls>
+          <source src="music/(VGM) Final Fantasy VI - The Decisive Battle ~ Doujin.mp3" type="audio/mpeg"/>
+        </audio>
+      </div>
+    </div>
+    <div>
+      <button class="add" id="addtwo"></button>
+      <br>
+      <button class="deny" id="denytwo"></button>
+      <div class="musicbox" id="mtwo">
+        <p>Ventonio - Red Winged Angel (Legendary Version)</p>
+        <audio controls>
+          <source src="music/Ventonio - Red Winged Angel (Legendary Version) (Normal Quality).wav" type="audio/wav"/>
+        </audio>
+      </div>
+    </div>
+    <div>
+      <button class="add" id="addthree"></button>
+      <br>
+      <button class="deny" id="denythree"></button>
+      <div class="musicbox" id="mthree">
+        <p>NieR- Automata OST - City Ruins (Dynamic - Vocals)</p>
+        <audio controls>
+          <source src="music/NieR- Automata OST - City Ruins (Dynamic - Vocals).mp3" type="audio/mpeg"/>
+        </audio>
+      </div>
+    </div>
+    <div>
+      <button class="add" id="addfour"></button>
+      <br>
+      <button class="deny" id="denyfour"></button>
+      <div class="musicbox" id="mfour">
+        <p>FFXIV OST Wanderer's Palace HM Theme</p>
+        <audio controls>
+          <source src="music/FFXIV OST Wanderer's Palace HM Theme.mp3" type="audio/mpeg"/>
+        </audio>
+      </div>
+    </div>
+    <div>
+      <button class="add" id="addfive"></button>
+      <br>
+      <button class="deny" id="denyfive"></button>
+      <div class="musicbox" id="mfive">
+        <p>F-777 - Raptor 2 -FREE ALBUM!- - 06 A Lost World</p>
+        <audio controls>
+          <source src="music/F-777 - Raptor 2 -FREE ALBUM!- - 06 A Lost World.wav" type="audio/wav"/>
+        </audio>
+      </div>
+    </div>
+  </div>
+  <div class="box c">
+    <h2 id="play">Song Being Played</h2>
+    <div> </div>
+    <h2 id="wait">Waiting list</h2>
+    <div id="waitlist"> </div>
+  </div>
+</div>
+<script src="js/jquery-3.2.0.min.js"></script> 
+<script src="js/script.js"></script>
+</body>
+</html>
